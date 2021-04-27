@@ -46,3 +46,9 @@ $height-jumbotron: 700px;
     font-weight: 900;
     color: $primary-color;
 }
+
+@mixin section-p {
+    font-size: 1.2rem;
+    line-height: 2.5rem; 
+    color: #585858; 
+}

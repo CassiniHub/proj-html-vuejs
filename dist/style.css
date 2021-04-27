@@ -173,10 +173,10 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   color: #69bf14;
 }
 #award-winning .award-wrapper p {
-  margin: 30px 0;
   font-size: 1.2rem;
   line-height: 2.5rem;
   color: #585858;
+  margin: 30px 0;
 }
 #award-winning .award-wrapper a.btn {
   border-radius: 25px;
@@ -189,6 +189,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   text-transform: uppercase;
   transition: all 0.2s;
   transition-timing-function: linear;
+}
+#award-winning .award-wrapper a.btn:hover {
+  background-color: #3294e2;
 }
 
 #full-service-solution {
@@ -205,6 +208,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 #full-service-solution .full-service-wrapper .full-service-text h3 {
   font-size: 1.3rem;
@@ -216,6 +220,58 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   font-size: 4rem;
   font-weight: 900;
   color: #69bf14;
+}
+#full-service-solution .service-cards-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#full-service-solution .service-cards-wrapper .card {
+  flex: 0 1 calc(100% / 3);
+  margin: 0 30px;
+  padding: 25px;
+  background-color: lightgoldenrodyellow;
+}
+#full-service-solution .service-cards-wrapper .card .image-card-wrapper {
+  width: 100%;
+}
+#full-service-solution .service-cards-wrapper .card .image-card-wrapper img {
+  width: 100%;
+}
+#full-service-solution .service-cards-wrapper .card .text-card-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+#full-service-solution .service-cards-wrapper .card .text-card-wrapper h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1975C0;
+}
+#full-service-solution .service-cards-wrapper .card .text-card-wrapper p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  color: #585858;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+#full-service-solution .service-cards-wrapper .card .text-card-wrapper a.btn {
+  border-radius: 25px;
+  padding: 13px 29px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #1975C0;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  transition-timing-function: linear;
+  margin-bottom: 10px;
+}
+#full-service-solution .service-cards-wrapper .card .text-card-wrapper a.btn:hover {
+  background-color: #3294e2;
 }
 
 * {
