@@ -1,0 +1,59 @@
+// HEADER
+header {
+    .secondary-header {
+        height: 60px;
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+        background-color: $primary-color;
+
+        .secondary-header-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            
+            height: 60px;
+            .secondary-left-header {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                flex: 0 1 50%;
+
+                color: white;
+            }
+            .secondary-right-header {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                flex: 0 1 50%;
+    
+                .social-icons {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+                    align-items: center;
+    
+                    li {
+                        margin: 0 10px;
+    
+                        &:last-child {
+                            margin-right: 0;
+                        }
+    
+                        a {
+                            font-size: 1.5rem;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .jumbutron {
+        .primary-header {
+
+        }
+    }
+}

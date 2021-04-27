@@ -1,4 +1,5 @@
 @import "partials/_variables";
+@import "partials/_homepage";
 
 * {
     padding: 0;
@@ -16,5 +17,11 @@ ul {
 }
 
 body {
-    background-color: $testcolor;
+    background-color: lightblue;
+}
+
+.container {
+    max-width: 1300px;
+
+    margin: 0 auto;
 }

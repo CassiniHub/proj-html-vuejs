@@ -1,3 +1,44 @@
+header .secondary-header {
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #69bf14;
+}
+header .secondary-header .secondary-header-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60px;
+}
+header .secondary-header .secondary-header-wrapper .secondary-left-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 1 50%;
+  color: white;
+}
+header .secondary-header .secondary-header-wrapper .secondary-right-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  flex: 0 1 50%;
+}
+header .secondary-header .secondary-header-wrapper .secondary-right-header .social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .secondary-header .secondary-header-wrapper .secondary-right-header .social-icons li {
+  margin: 0 10px;
+}
+header .secondary-header .secondary-header-wrapper .secondary-right-header .social-icons li:last-child {
+  margin-right: 0;
+}
+header .secondary-header .secondary-header-wrapper .secondary-right-header .social-icons li a {
+  font-size: 1.5rem;
+  color: white;
+}
 * {
   padding: 0;
   margin: 0;
@@ -14,5 +55,10 @@ ul {
 }
 
 body {
-  background-color: lightcoral;
+  background-color: lightblue;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
