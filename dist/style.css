@@ -124,6 +124,73 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   color: #777777;
 }
 
+#free-quote {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #1975C0;
+  transition: all 0.2s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+#free-quote:hover {
+  background-color: #3294e2;
+}
+#free-quote a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+}
+#free-quote a span {
+  margin-left: 10px;
+}
+
+#award-winning {
+  padding: 150px 0;
+  background-color: white;
+}
+#award-winning .award-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+#award-winning .award-wrapper h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #aaaaaa;
+}
+#award-winning .award-wrapper h2 {
+  margin-top: 20px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #69bf14;
+}
+#award-winning .award-wrapper p {
+  margin: 30px 0;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  color: #585858;
+}
+#award-winning .award-wrapper a.btn {
+  border-radius: 25px;
+  padding: 13px 29px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #1975C0;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  transition-timing-function: linear;
+}
+
 * {
   padding: 0;
   margin: 0;

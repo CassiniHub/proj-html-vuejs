@@ -58,6 +58,7 @@ header {
         background-size: 113%;
         background-image: url('images/avada-movers-homeherobackground-final.jpg');
         background-repeat: no-repeat;
+
         .primary-header {
             height: $height-primary-header;
 
@@ -66,6 +67,7 @@ header {
                 flex-flow: column nowrap;
 
                 height: $height-jumbotron;
+
                 .primary-header-wrapper {
                     display: flex;
                     flex-flow: row nowrap;
@@ -145,6 +147,85 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - -
+
+// MAIN
+// FREE QUOTE
+#free-quote {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0;
+
+    background-color: $secondary-color;
+
+    transition: all .2s;
+    transition-timing-function: linear;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary-hover-color;
+    }
+    a {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: white;
+
+        span {
+            margin-left: 10px;
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - -
+
+// AWARD WINNING
+#award-winning {
+    padding: 150px 0;
+    background-color: white;
+
+    .award-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 680px;
+
+        margin: 0 auto;
+
+        text-align: center;
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #aaaaaa;
+        }
+
+        h2 {
+            margin-top: 20px;
+
+            font-size: 4rem;
+            font-weight: 900;
+            color: $primary-color;
+        }
+
+        p {
+            margin: 30px 0;
+            font-size: 1.2rem;
+            line-height: 2.5rem; 
+            color: #585858;
+        }
+
+        a.btn {
+            @include btn;
         }
     }
 }
