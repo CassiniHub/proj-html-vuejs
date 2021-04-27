@@ -10,7 +10,10 @@ $height-secondary-header: 50px;
 $height-primary-header: 100px;
 $height-jumbotron: 700px;
 
+// - - - - - - - - - - - - - - - - - - -
+
 // MIXINS
+// GENERAL
 @mixin btn {
     border-radius: 25px;
 
@@ -25,4 +28,21 @@ $height-jumbotron: 700px;
     text-transform: uppercase;
     transition: all .2s;
     transition-timing-function: linear;
+}
+
+// - - - - - - - - - - - - - - - - - - -
+
+// MAIN
+@mixin section-h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #aaaaaa;
+}
+
+@mixin section-h2 {
+    margin-top: 15px;
+
+    font-size: 4rem;
+    font-weight: 900;
+    color: $primary-color;
 }

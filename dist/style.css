@@ -167,7 +167,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   color: #aaaaaa;
 }
 #award-winning .award-wrapper h2 {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 4rem;
   font-weight: 900;
   color: #69bf14;
@@ -189,6 +189,33 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   text-transform: uppercase;
   transition: all 0.2s;
   transition-timing-function: linear;
+}
+
+#full-service-solution {
+  padding: 150px 0;
+  background-color: whitesmoke;
+}
+#full-service-solution .full-service-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#full-service-solution .full-service-wrapper .full-service-text {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+#full-service-solution .full-service-wrapper .full-service-text h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #aaaaaa;
+}
+#full-service-solution .full-service-wrapper .full-service-text h2 {
+  margin-top: 15px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #69bf14;
 }
 
 * {

@@ -204,17 +204,11 @@ header {
 
         text-align: center;
         h3 {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: #aaaaaa;
+            @include section-h3;
         }
 
         h2 {
-            margin-top: 20px;
-
-            font-size: 4rem;
-            font-weight: 900;
-            color: $primary-color;
+            @include section-h2;
         }
 
         p {
@@ -226,6 +220,35 @@ header {
 
         a.btn {
             @include btn;
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - -
+
+// FULL SERVICE SOLUTION
+#full-service-solution {
+    padding: 150px 0;
+    background-color: whitesmoke;
+
+    .full-service-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .full-service-text {
+            flex: 0 0 auto;
+
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                @include section-h3;
+            }
+            h2 {
+                @include section-h2;
+            }
         }
     }
 }
