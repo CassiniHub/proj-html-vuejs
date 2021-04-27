@@ -40,7 +40,7 @@ header .secondary-header .secondary-header-wrapper .secondary-right-header .soci
   color: white;
 }
 header .jumbotron {
-  height: 600px;
+  height: 700px;
   background-position: 49% 11%;
   background-size: 113%;
   background-image: url("images/avada-movers-homeherobackground-final.jpg");
@@ -49,42 +49,47 @@ header .jumbotron {
 header .jumbotron .primary-header {
   height: 100px;
 }
-header .jumbotron .primary-header .primary-header-wrapper {
+header .jumbotron .primary-header .jumbotron-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 700px;
+}
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper {
   display: flex;
   flex-flow: row nowrap;
   height: 100px;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-logo {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   flex: 1 1 auto;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .nav-menu-voices {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice:last-child {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice:last-child {
   margin-right: 0;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a {
   font-size: 1.4rem;
   font-weight: 900;
   color: black;
   transition: all 0.2s;
   transition-timing-function: linear;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a:Hover {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a:Hover {
   color: #69bf14;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn {
   border-radius: 25px;
   padding: 13px 29px;
   font-size: 1.2rem;
@@ -97,8 +102,26 @@ header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .
   transition-timing-function: linear;
   margin-left: 50px;
 }
-header .jumbotron .primary-header .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn:hover {
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn:hover {
   background-color: #3294e2;
+}
+header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h1 {
+  margin: 20px 0;
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: black;
+}
+header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #777777;
 }
 
 * {

@@ -52,69 +52,96 @@ header {
     }
 
     .jumbotron {
-        height: 600px;
+        height: $height-jumbotron;
+
         background-position: 49% 11%;
         background-size: 113%;
         background-image: url('images/avada-movers-homeherobackground-final.jpg');
         background-repeat: no-repeat;
-
         .primary-header {
             height: $height-primary-header;
 
-            .primary-header-wrapper {
+            .jumbotron-wrapper {
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: column nowrap;
 
-                height: $height-primary-header;
-
-                .primary-header-logo {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
-                
-                .primary-header-menu {
+                height: $height-jumbotron;
+                .primary-header-wrapper {
                     display: flex;
                     flex-flow: row nowrap;
-                    justify-content: flex-end;
-
-                    flex: 1 1 auto;
+    
+                    height: $height-primary-header;
+    
+                    .primary-header-logo {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
                     
-                    .nav-menu-voices {
+                    .primary-header-menu {
                         display: flex;
                         flex-flow: row nowrap;
                         justify-content: flex-end;
-                        align-items: center;
-
-                        li.voice {
-                            &:last-child {
-                                margin-right: 0;
+    
+                        flex: 1 1 auto;
+                        
+                        .nav-menu-voices {
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: flex-end;
+                            align-items: center;
+    
+                            li.voice {
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                a {
+                                    font-size: 1.4rem;
+                                    font-weight: 900;
+                                    color: black;
+                                    transition: all .2s;
+                                    transition-timing-function: linear;
+    
+                                    &:Hover {
+                                        color: $primary-color;
+                                    }
+                                }
                             }
-                            a {
-                                font-size: 1.4rem;
-                                font-weight: 900;
-                                color: black;
-                                transition: all .2s;
-                                transition-timing-function: linear;
-
-                                &:Hover {
-                                    color: $primary-color;
+    
+                            li {
+    
+                                a.btn {
+                                    @include btn;
+    
+                                    margin-left: 50px;
+                                    &:hover {
+                                        background-color: $secondary-hover-color;
+                                    }
                                 }
                             }
                         }
+                    }
+                }
 
-                        li {
+                .jumbo-text {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1 1 auto;
 
-                            a.btn {
-                                @include btn;
+                    h1 {
+                        margin: 20px 0;
 
-                                margin-left: 50px;
-                                &:hover {
-                                    background-color: $secondary-hover-color;
-                                }
-                            }
-                            
-                        }
+                        font-size: 5.5rem;
+                        font-weight: 900;
+                        color: black;
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        font-weight: 900;
+                        color: $gray-text-color;
                     }
                 }
             }

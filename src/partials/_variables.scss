@@ -3,10 +3,12 @@ $primary-color: #69bf14;
 $primary-border-color: #5CA61C;
 $secondary-color: #1975C0;
 $secondary-hover-color: #3294e2;
+$gray-text-color: #777777;
 
 // SECONDARY HEADER
 $height-secondary-header: 50px;
 $height-primary-header: 100px;
+$height-jumbotron: 700px;
 
 // MIXINS
 @mixin btn {
