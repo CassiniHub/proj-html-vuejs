@@ -2,5 +2,25 @@
 $primary-color: #69bf14;
 $primary-border-color: #5CA61C;
 $secondary-color: #1975C0;
+$secondary-hover-color: #3294e2;
+
+// SECONDARY HEADER
+$height-secondary-header: 50px;
+$height-primary-header: 100px;
 
 // MIXINS
+@mixin btn {
+    border-radius: 25px;
+
+    padding: 13px 29px;
+
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+    background-color: $secondary-color;
+    
+    text-transform: uppercase;
+    transition: all .2s;
+    transition-timing-function: linear;
+}
