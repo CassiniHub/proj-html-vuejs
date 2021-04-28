@@ -233,80 +233,82 @@ header {
 #full-service-solution {
     padding: 150px 0;
     background-color: white;
-
-    .full-service-wrapper {
-        display: flex;
-        flex-flow: column nowrap;
-
-        .full-service-text {
-            flex: 0 0 auto;
-
+    .container {
+        max-width: 1352px;
+        .full-service-wrapper {
             display: flex;
             flex-flow: column nowrap;
-            align-items: center;
-            justify-content: center;
-
-            margin-bottom: 50px;
-            h3 {
-                @include section-h3;
-            }
-            h2 {
-                @include section-h2;
-            }
-        }
-    }
-
-    .service-cards-wrapper {
-        display: flex;
-        flex-flow: row nowrap;
-
-        .card {
-            flex: 0 1 calc(100% / 3);
-
-            margin: 0 25px;
-            padding: 20px;
-            background-color: #F2F5F8;
-
-            .image-card-wrapper {
-                width: 100%;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .text-card-wrapper {
+    
+            .full-service-text {
+                flex: 0 0 auto;
+    
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
                 justify-content: center;
-
-                margin-top: 20px;
-                padding: 30px 20px;
-
-                text-align: center;
-                background-color: white;
-
+    
+                margin-bottom: 50px;
                 h3 {
-                    font-size: 2.2rem;
-                    font-weight: 600;
-                    color: $secondary-color;
+                    @include section-h3;
                 }
-
-                p {
-                    @include section-p;
-
-                    margin-top: 15px;
-                    margin-bottom: 25px;
+                h2 {
+                    @include section-h2;
                 }
-
-                a.btn {
-                    @include btn;
-
-                    margin-bottom: 10px;
-
-                    &:hover {
-                        background-color: $secondary-hover-color;
+            }
+        }
+    
+        .service-cards-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+    
+            .card {
+                flex: 0 1 calc(100% / 3);
+    
+                margin: 0 25px;
+                padding: 20px;
+                background-color: #F2F5F8;
+    
+                .image-card-wrapper {
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .text-card-wrapper {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: center;
+    
+                    margin-top: 17px;
+                    padding: 30px 20px;
+    
+                    text-align: center;
+                    background-color: white;
+    
+                    h3 {
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        color: $secondary-color;
+                    }
+    
+                    p {
+                        @include section-p;
+    
+                        margin-top: 15px;
+                        margin-bottom: 25px;
+                    }
+    
+                    a.btn {
+                        @include btn;
+    
+                        margin-bottom: 10px;
+    
+                        &:hover {
+                            background-color: $secondary-hover-color;
+                        }
                     }
                 }
             }

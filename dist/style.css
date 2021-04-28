@@ -174,7 +174,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 }
 #award-winning .award-wrapper p {
   font-size: 1.3rem;
-  line-height: 2.5rem;
+  line-height: 2;
   color: #585858;
   margin: 30px 0;
 }
@@ -198,11 +198,14 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   padding: 150px 0;
   background-color: white;
 }
-#full-service-solution .full-service-wrapper {
+#full-service-solution .container {
+  max-width: 1352px;
+}
+#full-service-solution .container .full-service-wrapper {
   display: flex;
   flex-flow: column nowrap;
 }
-#full-service-solution .full-service-wrapper .full-service-text {
+#full-service-solution .container .full-service-wrapper .full-service-text {
   flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;
@@ -210,56 +213,56 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   justify-content: center;
   margin-bottom: 50px;
 }
-#full-service-solution .full-service-wrapper .full-service-text h3 {
+#full-service-solution .container .full-service-wrapper .full-service-text h3 {
   font-size: 16px;
   font-weight: 800;
   color: #aaaaaa;
 }
-#full-service-solution .full-service-wrapper .full-service-text h2 {
+#full-service-solution .container .full-service-wrapper .full-service-text h2 {
   margin-top: 15px;
   font-size: 47px;
   font-weight: 900;
   color: #69bf14;
 }
-#full-service-solution .service-cards-wrapper {
+#full-service-solution .container .service-cards-wrapper {
   display: flex;
   flex-flow: row nowrap;
 }
-#full-service-solution .service-cards-wrapper .card {
+#full-service-solution .container .service-cards-wrapper .card {
   flex: 0 1 calc(100% / 3);
   margin: 0 25px;
   padding: 20px;
   background-color: #F2F5F8;
 }
-#full-service-solution .service-cards-wrapper .card .image-card-wrapper {
+#full-service-solution .container .service-cards-wrapper .card .image-card-wrapper {
   width: 100%;
 }
-#full-service-solution .service-cards-wrapper .card .image-card-wrapper img {
+#full-service-solution .container .service-cards-wrapper .card .image-card-wrapper img {
   width: 100%;
 }
-#full-service-solution .service-cards-wrapper .card .text-card-wrapper {
+#full-service-solution .container .service-cards-wrapper .card .text-card-wrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 17px;
   padding: 30px 20px;
   text-align: center;
   background-color: white;
 }
-#full-service-solution .service-cards-wrapper .card .text-card-wrapper h3 {
+#full-service-solution .container .service-cards-wrapper .card .text-card-wrapper h3 {
   font-size: 2.2rem;
   font-weight: 600;
   color: #1975C0;
 }
-#full-service-solution .service-cards-wrapper .card .text-card-wrapper p {
+#full-service-solution .container .service-cards-wrapper .card .text-card-wrapper p {
   font-size: 1.3rem;
-  line-height: 2.5rem;
+  line-height: 2;
   color: #585858;
   margin-top: 15px;
   margin-bottom: 25px;
 }
-#full-service-solution .service-cards-wrapper .card .text-card-wrapper a.btn {
+#full-service-solution .container .service-cards-wrapper .card .text-card-wrapper a.btn {
   border-radius: 25px;
   padding: 13px 29px;
   font-size: 1.2rem;
@@ -272,7 +275,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   transition-timing-function: linear;
   margin-bottom: 10px;
 }
-#full-service-solution .service-cards-wrapper .card .text-card-wrapper a.btn:hover {
+#full-service-solution .container .service-cards-wrapper .card .text-card-wrapper a.btn:hover {
   background-color: #3294e2;
 }
 
