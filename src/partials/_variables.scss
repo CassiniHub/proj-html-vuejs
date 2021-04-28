@@ -34,7 +34,7 @@ $height-jumbotron: 700px;
 
 // MAIN
 @mixin section-h3 {
-    font-size: 1.3rem;
+    font-size: 16px;
     font-weight: 800;
     color: #aaaaaa;
 }
@@ -42,13 +42,13 @@ $height-jumbotron: 700px;
 @mixin section-h2 {
     margin-top: 15px;
 
-    font-size: 4rem;
+    font-size: 47px;
     font-weight: 900;
     color: $primary-color;
 }
 
 @mixin section-p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2.5rem; 
     color: #585858; 
 }
