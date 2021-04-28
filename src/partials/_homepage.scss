@@ -522,10 +522,10 @@ header {
 
 // - - - - - - - - - - - - - - - - - - - - - - -
 
-// REQUEST FREE QUOTE
+// FOOTER
 footer {
     .primary-footer {
-        padding: 70px 30px;
+        padding: 60px 30px;
         background-color: white;
 
         .container {
@@ -646,6 +646,54 @@ footer {
                                     font-size: 12px;
                                     margin-right: 5px;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .secondary-footer {
+        padding: 40px 15px;
+
+        background-color: $primary-color;
+
+        .container {
+
+            .secondary-footer-wrapper {
+                .secondary-footer-top {
+                    display: flex;
+                    justify-content: center;
+
+                    margin-bottom: 30px;
+
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: white;
+                    
+                    a {
+                        color: white;
+                    }
+                }
+
+                .secondary-footer-bot {
+                    ul.footer-social-icons {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        li {
+                            margin: 0 10px;
+        
+                            &:last-child {
+                                margin-right: 0;
+                            }
+        
+                            a {
+                                font-size: 1.8rem;
+                                color: white;
                             }
                         }
                     }

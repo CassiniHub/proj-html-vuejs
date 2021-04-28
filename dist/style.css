@@ -467,7 +467,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 }
 
 footer .primary-footer {
-  padding: 70px 30px;
+  padding: 60px 30px;
   background-color: white;
 }
 footer .primary-footer .container .primary-footer-wrapper {
@@ -561,6 +561,37 @@ footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent
 footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent ul.primary-footer-menu-voices li a i {
   font-size: 12px;
   margin-right: 5px;
+}
+footer .secondary-footer {
+  padding: 40px 15px;
+  background-color: #69bf14;
+}
+footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-top a {
+  color: white;
+}
+footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-bot ul.footer-social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-bot ul.footer-social-icons li {
+  margin: 0 10px;
+}
+footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-bot ul.footer-social-icons li:last-child {
+  margin-right: 0;
+}
+footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-bot ul.footer-social-icons li a {
+  font-size: 1.8rem;
+  color: white;
 }
 
 * {
