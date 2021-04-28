@@ -19,7 +19,8 @@ function init() {
       }, {
         title: 'RECENT POSTS',
         voices: ['Heading Out To College?', 'Moving Your Business?', 'Outstanding Quality', 'Cost of Moving', 'Best Moving Tips']
-      }]
+      }],
+      scrollY: 0
     },
     methods: {
       selectMenuVoices: function selectMenuVoices(menuName) {
@@ -30,11 +31,20 @@ function init() {
             return menuVoicesList.voices;
           }
         }
+      },
+      backToTop: function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      },
+      handleScroll: function handleScroll() {
+        this.scrollY = window.scrollY;
+        console.log(this.scrollY);
       }
     },
     computed: {},
     mounted: function mounted() {
       console.log('Hi developer');
+      window.addEventListener('scroll', this.handleScroll);
     }
   });
 }

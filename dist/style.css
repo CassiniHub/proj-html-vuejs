@@ -1,4 +1,22 @@
 @charset "UTF-8";
+.--back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+  width: 48px;
+  height: 35px;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.2s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+.--back-to-top:hover {
+  background-color: #69bf14;
+}
+
 header .secondary-header {
   height: 50px;
   padding-left: 30px;
@@ -636,4 +654,12 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
 }

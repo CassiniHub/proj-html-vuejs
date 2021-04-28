@@ -40,8 +40,9 @@ function init() {
                         'Best Moving Tips'
                     ]
                 }
+            ],
 
-            ]
+            scrollY: 0
         },
 
         methods: {
@@ -53,15 +54,26 @@ function init() {
                         return menuVoicesList.voices;
                     }
                 }
-            }
+            },
+
+            backToTop: function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            },
+
+            handleScroll () {
+                this.scrollY = window.scrollY;
+                console.log(this.scrollY);
+              }
         },
 
         computed: {
-
+            
         },
 
         mounted() {
             console.log('Hi developer');
+            window.addEventListener('scroll', this.handleScroll);
         }
     });
 }
