@@ -76,6 +76,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .pr
   justify-content: flex-end;
   align-items: center;
 }
+header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice {
+  margin-right: 40px;
+}
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice:last-child {
   margin-right: 0;
 }

@@ -10,7 +10,9 @@
 function init() {
   new Vue({
     el: '#app',
-    data: {},
+    data: {
+      headerMenuVoices: ['Home', 'Rates', 'Testimonials', 'FAQ', 'Blog', 'Contact']
+    },
     methods: {},
     computed: {},
     mounted: function mounted() {

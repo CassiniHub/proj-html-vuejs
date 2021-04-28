@@ -3,7 +3,14 @@ function init() {
         el: '#app',
 
         data: {
-
+            headerMenuVoices: [
+                'Home',
+                'Rates',
+                'Testimonials',
+                'FAQ',
+                'Blog',
+                'Contact'
+            ]
         },
 
         methods: {
