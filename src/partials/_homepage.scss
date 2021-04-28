@@ -324,7 +324,9 @@ header {
     height: 780px;
 
     background-image: url('https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-movewithease-background-new.jpg');
+    background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
 
     .move-with-wrapper {
         display: flex;
@@ -409,12 +411,12 @@ header {
 
 // TESTIMONIALS
 #testimonials {
-    height: 996px;
-
     padding: 130px 0;
 
     background-image: url('images/avada-movers-testimonial-background.jpg');
+    background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
 
     .container {
         .testimonials-wrapper {
@@ -469,6 +471,184 @@ header {
 
                 a.btn {
                     @include btn;
+                }
+            }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - -
+
+// REQUEST FREE QUOTE
+#request-free-quote {
+    padding: 130px 30px;
+    border-bottom: 15px solid $primary-color;
+
+    background-image: url('images/avada-movers-request-quote-background.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+
+        .request-free-wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            width: 60%;
+            margin: 0 auto;
+
+            text-align: center;
+
+            h2 {
+                @include section-h2;
+            }
+
+            p {
+                @include section-p;
+
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            a.btn {
+                @include btn;
+            }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - -
+
+// REQUEST FREE QUOTE
+footer {
+    .primary-footer {
+        padding: 70px 30px;
+        background-color: white;
+
+        .container {
+            .primary-footer-wrapper {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                
+                .primary-footer-about {
+                    flex: 0 1 calc(100% / 3);
+
+                    padding: 20px;
+
+                    h4 {
+                        margin-bottom: 28px;
+
+                        font-size: 19px;
+                        font-weight: 900;
+                        color: black;
+                    }
+    
+                    p {
+                        margin-bottom: 50px;
+
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 2;
+                        color: black;
+                    }
+                }
+
+                .primary-footer-movers {
+                    flex: 0 1 calc(100% / 3);
+
+                    padding: 20px;
+
+                    h4 {
+                        margin-bottom: 28px;
+
+                        font-size: 19px;
+                        font-weight: 900;
+                        color: black;
+                    }
+
+                    ul.primary-footer-menu-voices {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        li {
+                            a {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 2;
+                                color: #252525;
+
+                                transition: all .2s;
+                                transition-timing-function: linear;
+
+                                &:Hover {
+                                    color: $primary-color;
+                                }
+
+                                i {
+                                    font-size: 12px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .primary-footer-recent {
+                    flex: 0 1 calc(100% / 3);
+
+                    padding: 20px;
+
+                    h4 {
+                        margin-bottom: 28px;
+
+                        font-size: 19px;
+                        font-weight: 900;
+                        color: black;
+                    }
+
+                    ul.primary-footer-menu-voices {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        li {
+                            a {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 2;
+                                color: #252525;
+
+                                transition: all .2s;
+                                transition-timing-function: linear;
+
+                                &:Hover {
+                                    color: $primary-color;
+                                }
+
+                                i {
+                                    font-size: 12px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
