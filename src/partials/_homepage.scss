@@ -596,6 +596,13 @@ footer {
                                     color: $primary-color;
                                 }
 
+                                &::before {
+                                    font-family: "Font Awesome 5 Free";
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    content: "\f054 \2003";
+                                }
+
                                 i {
                                     font-size: 12px;
                                     margin-right: 5px;
@@ -641,6 +648,13 @@ footer {
 
                                 &:Hover {
                                     color: $primary-color;
+                                }
+
+                                &::before {
+                                    font-family: "Font Awesome 5 Free";
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    content: "\f054 \2003";
                                 }
 
                                 i {

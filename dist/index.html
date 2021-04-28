@@ -35,17 +35,8 @@
                         </div>
                         <div class="secondary-right-header">
                             <ul class="social-icons">
-                                <li>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                <li v-for="icon in socialIcons">
+                                    <a href="" v-html="icon"></a>
                                 </li>
                             </ul>
                         </div>
@@ -286,8 +277,9 @@
                                 AVADA MOVERS
                             </h4>
                             <ul class="primary-footer-menu-voices">
-                                <li>
-                                    <a href=""><i class="fas fa-chevron-right"></i><span>Home</span></a>
+                                <li v-for="menuVoice in selectMenuVoices('AVADA MOVERS')">
+                                    <a href="">{{ menuVoice }}</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="primary-footer-recent">
@@ -295,8 +287,8 @@
                                 RECENT POSTS
                             </h4>
                             <ul class="primary-footer-menu-voices">
-                                <li>
-                                    <a href=""><i class="fas fa-chevron-right"></i><span>Home</span></a>
+                                <li v-for="menuVoice in selectMenuVoices('RECENT POSTS')">
+                                    <a href="">{{ menuVoice }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -312,17 +304,8 @@
                         </div>
                         <div class="secondary-footer-bot">
                             <ul class="footer-social-icons">
-                                <li>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                <li v-for="icon in socialIcons">
+                                    <a href="" v-html="icon"></a>
                                 </li>
                             </ul>
                         </div>
