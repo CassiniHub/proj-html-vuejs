@@ -279,6 +279,83 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   background-color: #3294e2;
 }
 
+#move-with-ease {
+  height: 780px;
+  background-image: url("https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-movewithease-background-new.jpg");
+  background-size: cover;
+}
+#move-with-ease .move-with-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 780px;
+}
+#move-with-ease .move-with-wrapper .move-with-left {
+  flex: 1 1 50%;
+}
+#move-with-ease .move-with-wrapper .move-with-right {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box {
+  padding: 15px 15px;
+  background-color: #5AA510;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px;
+  text-align: center;
+  background-color: #69bf14;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #aaaaaa;
+  color: white;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text h2 {
+  margin-top: 15px;
+  font-size: 47px;
+  font-weight: 900;
+  color: #69bf14;
+  margin-bottom: 25px;
+  color: white;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text .line-divisor {
+  height: 1px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #93F236;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text p {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #585858;
+  padding: 30px 0;
+  color: white;
+}
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text a.btn {
+  border-radius: 25px;
+  padding: 13px 29px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #1975C0;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  transition-timing-function: linear;
+  padding: 17px 40px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
 * {
   padding: 0;
   margin: 0;
