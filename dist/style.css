@@ -356,6 +356,70 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   font-size: 1.5rem;
 }
 
+#testimonials {
+  height: 996px;
+  padding: 130px 0;
+  background-image: url("images/avada-movers-testimonial-background.jpg");
+  background-size: cover;
+}
+#testimonials .container .testimonials-wrapper .testimonials-title {
+  text-align: center;
+}
+#testimonials .container .testimonials-wrapper .testimonials-title h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #aaaaaa;
+}
+#testimonials .container .testimonials-wrapper .testimonials-title h2 {
+  margin-top: 15px;
+  font-size: 47px;
+  font-weight: 900;
+  color: #69bf14;
+}
+#testimonials .container .testimonials-wrapper .testimonials-cards-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+#testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card {
+  padding: 20px 25px;
+  text-align: center;
+}
+#testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+#testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card h3 {
+  margin: 30px 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1975C0;
+}
+#testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card em {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #585858;
+}
+#testimonials .container .testimonials-wrapper .testimonials-button {
+  padding: 13px 0;
+  margin-top: 100px;
+  text-align: center;
+}
+#testimonials .container .testimonials-wrapper .testimonials-button a.btn {
+  border-radius: 25px;
+  padding: 13px 29px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #1975C0;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  transition-timing-function: linear;
+}
+
 * {
   padding: 0;
   margin: 0;

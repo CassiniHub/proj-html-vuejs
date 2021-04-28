@@ -408,3 +408,69 @@ header {
 // - - - - - - - - - - - - - - - - - - - - - - -
 
 // TESTIMONIALS
+#testimonials {
+    height: 996px;
+
+    padding: 130px 0;
+
+    background-image: url('images/avada-movers-testimonial-background.jpg');
+    background-size: cover;
+
+    .container {
+        .testimonials-wrapper {
+            .testimonials-title {
+                text-align: center;
+
+                h3 {
+                    @include section-h3;
+                }
+
+                h2 {
+                    @include section-h2;
+                }
+            }
+
+            .testimonials-cards-wrapper {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+
+                margin-top: 50px;
+
+                .testimonials-card {
+                    padding: 20px 25px;
+                    text-align: center;
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+
+                        border-radius: 100px;
+                    }
+
+                    h3 {
+                        margin: 30px 0;
+
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        color: $secondary-color;
+                    }
+
+                    em {
+                        @include section-p;
+                    }
+                }
+            }
+
+            .testimonials-button {
+                padding: 13px 0;
+                margin-top: 100px;
+                text-align: center;
+
+                a.btn {
+                    @include btn;
+                }
+            }
+        }
+    }
+}
