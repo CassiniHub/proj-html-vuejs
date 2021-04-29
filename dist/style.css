@@ -18,15 +18,12 @@
 }
 
 header .secondary-header {
-  height: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 12.5px 30px;
   background-color: #69bf14;
 }
 header .secondary-header .secondary-header-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  height: 50px;
 }
 header .secondary-header .secondary-header-wrapper .secondary-left-header {
   display: flex;
@@ -34,7 +31,11 @@ header .secondary-header .secondary-header-wrapper .secondary-left-header {
   justify-content: flex-start;
   align-items: center;
   flex: 1 1 auto;
+  font-size: 13px;
   color: white;
+}
+header .secondary-header .secondary-header-wrapper .secondary-left-header span {
+  margin-left: 12px;
 }
 header .secondary-header .secondary-header-wrapper .secondary-right-header {
   display: flex;
@@ -55,14 +56,14 @@ header .secondary-header .secondary-header-wrapper .secondary-right-header .soci
   margin-right: 0;
 }
 header .secondary-header .secondary-header-wrapper .secondary-right-header .social-icons li a {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   color: white;
 }
 header .jumbotron {
   height: 700px;
-  background-position: 49% 11%;
-  background-size: 113%;
   background-image: url("images/avada-movers-homeherobackground-final.jpg");
+  background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 header .jumbotron .primary-header {
@@ -80,6 +81,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper {
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-logo {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 }
@@ -96,13 +98,13 @@ header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .pr
   align-items: center;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice:last-child {
   margin-right: 0;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a {
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: 900;
   color: black;
   transition: all 0.2s;
@@ -122,7 +124,6 @@ header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .pr
   text-transform: uppercase;
   transition: all 0.2s;
   transition-timing-function: linear;
-  margin-left: 50px;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn:hover {
   background-color: #3294e2;
@@ -141,7 +142,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h1 {
   color: black;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: 900;
   color: #777777;
 }
@@ -161,7 +162,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   background-color: #3294e2;
 }
 #free-quote a {
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
   color: white;
@@ -195,7 +196,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   color: #69bf14;
 }
 #award-winning .award-wrapper p {
-  font-size: 1.3rem;
+  font-size: 16px;
   line-height: 2;
   color: #585858;
   margin: 30px 0;
@@ -226,13 +227,14 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 #full-service-solution .container .full-service-wrapper {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: flex-start;
 }
 #full-service-solution .container .full-service-wrapper .full-service-text {
   flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 #full-service-solution .container .full-service-wrapper .full-service-text h3 {
@@ -249,6 +251,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 #full-service-solution .container .service-cards-wrapper {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 #full-service-solution .container .service-cards-wrapper .card {
   flex: 0 1 calc(100% / 3);
@@ -265,20 +268,21 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 #full-service-solution .container .service-cards-wrapper .card .text-card-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 17px;
   padding: 30px 20px;
   text-align: center;
   background-color: white;
 }
 #full-service-solution .container .service-cards-wrapper .card .text-card-wrapper h3 {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
   color: #1975C0;
 }
 #full-service-solution .container .service-cards-wrapper .card .text-card-wrapper p {
-  font-size: 1.3rem;
+  font-size: 16px;
   line-height: 2;
   color: #585858;
   margin-top: 15px;
@@ -311,6 +315,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 #move-with-ease .move-with-wrapper {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-start;
   height: 780px;
 }
 #move-with-ease .move-with-wrapper .move-with-left {
@@ -358,7 +363,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   background-color: #93F236;
 }
 #move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text p {
-  font-size: 1.3rem;
+  font-size: 16px;
   line-height: 2;
   color: #585858;
   padding: 30px 0;
@@ -423,7 +428,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   color: #1975C0;
 }
 #testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card em {
-  font-size: 1.3rem;
+  font-size: 16px;
   line-height: 2;
   color: #585858;
 }
@@ -469,7 +474,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   color: #69bf14;
 }
 #request-free-quote .container .request-free-wrapper p {
-  font-size: 1.3rem;
+  font-size: 16px;
   line-height: 2;
   color: #585858;
   margin-top: 20px;
@@ -637,6 +642,7 @@ footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  scroll-behavior: smooth;
 }
 
 ul {

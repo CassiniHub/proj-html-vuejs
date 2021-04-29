@@ -1,37 +1,32 @@
 // HEADER
 header {
     .secondary-header {
-        height: $height-secondary-header;
-
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 12.5px 30px;
 
         background-color: $primary-color;
 
         .secondary-header-wrapper {
             display: flex;
             flex-flow: row nowrap;
-            
-            height: $height-secondary-header;
+
             .secondary-left-header {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: flex-start;
+                @include flex-row-no-start;
                 align-items: center;
                 flex: 1 1 auto;
 
+                font-size: 13px;
                 color: white;
+
+                span {
+                    margin-left: 12px;
+                }
             }
             .secondary-right-header {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: flex-end;
+                @include flex-row-no-end;
                 flex: 1 1 auto;
     
                 .social-icons {
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: flex-end;
+                    @include flex-row-no-end;
                     align-items: center;
     
                     li {
@@ -42,7 +37,7 @@ header {
                         }
     
                         a {
-                            font-size: 1.5rem;
+                            font-size: 1.45rem;
                             color: white;
                         }
                     }
@@ -54,9 +49,9 @@ header {
     .jumbotron {
         height: $height-jumbotron;
 
-        background-position: 49% 11%;
-        background-size: 113%;
         background-image: url('images/avada-movers-homeherobackground-final.jpg');
+        background-position: center top;
+        background-size: cover;
         background-repeat: no-repeat;
 
         .primary-header {
@@ -75,31 +70,27 @@ header {
                     height: $height-primary-header;
     
                     .primary-header-logo {
-                        display: flex;
-                        justify-content: flex-start;
+                        @include flex-row-no-start;
                         align-items: center;
                     }
                     
                     .primary-header-menu {
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: flex-end;
+                        @include flex-row-no-end;
     
                         flex: 1 1 auto;
                         
                         .nav-menu-voices {
-                            display: flex;
-                            flex-flow: row nowrap;
-                            justify-content: flex-end;
+                            @include flex-row-no-end;
                             align-items: center;
     
                             li.voice {
-                                margin-right: 40px;
+                                margin-right: 50px;
+
                                 &:last-child {
                                     margin-right: 0;
                                 }
                                 a {
-                                    font-size: 1.4rem;
+                                    font-size: 16px;
                                     font-weight: 900;
                                     color: black;
                                     transition: all .2s;
@@ -115,8 +106,7 @@ header {
     
                                 a.btn {
                                     @include btn;
-    
-                                    margin-left: 50px;
+
                                     &:hover {
                                         background-color: $secondary-hover-color;
                                     }
@@ -127,9 +117,7 @@ header {
                 }
 
                 .jumbo-text {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
+                    @include flex-col-no-center;
                     align-items: center;
                     flex: 1 1 auto;
 
@@ -142,7 +130,7 @@ header {
                     }
 
                     h3 {
-                        font-size: 1.4rem;
+                        font-size: 16px;
                         font-weight: 900;
                         color: $gray-text-color;
                     }
@@ -157,9 +145,7 @@ header {
 // MAIN
 // FREE QUOTE
 #free-quote {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    @include flex-row-no-center;
     align-items: center;
 
     padding: 50px 0;
@@ -175,7 +161,7 @@ header {
         background-color: $secondary-hover-color;
     }
     a {
-        font-size: 1.5rem;
+        font-size: 18px;
         font-weight: 400;
         letter-spacing: 2px;
         color: white;
@@ -194,9 +180,7 @@ header {
     background-color: #F1F5F9;
 
     .award-wrapper {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        @include flex-col-no-center;
         align-items: center;
 
         max-width: 680px;
@@ -204,6 +188,7 @@ header {
         margin: 0 auto;
 
         text-align: center;
+
         h3 {
             @include section-h3;
         }
@@ -237,19 +222,18 @@ header {
 
     .container {
         max-width: 1352px;
+
         .full-service-wrapper {
-            display: flex;
-            flex-flow: column nowrap;
+            @include flex-col-no-start;
     
             .full-service-text {
                 flex: 0 0 auto;
     
-                display: flex;
-                flex-flow: column nowrap;
+                @include flex-col-no-center;
                 align-items: center;
-                justify-content: center;
     
                 margin-bottom: 50px;
+
                 h3 {
                     @include section-h3;
                 }
@@ -260,15 +244,15 @@ header {
         }
     
         .service-cards-wrapper {
-            display: flex;
-            flex-flow: row nowrap;
+            @include flex-row-no-start;
     
             .card {
                 flex: 0 1 calc(100% / 3);
     
                 margin: 0 25px;
                 padding: 20px;
-                background-color: #F2F5F8;
+
+                background-color: $card-bg;
     
                 .image-card-wrapper {
                     width: 100%;
@@ -279,10 +263,8 @@ header {
                 }
     
                 .text-card-wrapper {
-                    display: flex;
-                    flex-flow: column nowrap;
+                    @include flex-col-no-center;
                     align-items: center;
-                    justify-content: center;
     
                     margin-top: 17px;
                     padding: 30px 20px;
@@ -291,8 +273,9 @@ header {
                     background-color: white;
     
                     h3 {
-                        font-size: 2.2rem;
-                        font-weight: 600;
+                        font-size: 27px;
+                        font-weight: 700;
+                        line-height: 1.5;
                         color: $secondary-color;
                     }
     
@@ -330,8 +313,7 @@ header {
     background-repeat: no-repeat;
 
     .move-with-wrapper {
-        display: flex;
-        flex-flow: row nowrap;
+        @include flex-row-no-start;
 
         height: 780px;
         

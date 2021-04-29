@@ -5,8 +5,14 @@ $secondary-color: #1975C0;
 $secondary-hover-color: #3294e2;
 $gray-text-color: #777777;
 
+// section text color
+$section-h3-gray: #aaaaaa;
+$section-p-gray: #585858;
+
+// card color bg
+$card-bg: #F2F5F8;
+
 // SECONDARY HEADER
-$height-secondary-header: 50px;
 $height-primary-header: 100px;
 $height-jumbotron: 700px;
 
@@ -14,6 +20,7 @@ $height-jumbotron: 700px;
 
 // MIXINS
 // GENERAL
+
 @mixin btn {
     border-radius: 25px;
 
@@ -30,13 +37,48 @@ $height-jumbotron: 700px;
     transition-timing-function: linear;
 }
 
+// FLEX
+@mixin flex-row-no-start {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+@mixin flex-row-no-end {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+@mixin flex-row-no-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+@mixin flex-col-no-start {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+@mixin flex-col-no-end {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+@mixin flex-col-no-center {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
 // - - - - - - - - - - - - - - - - - - -
 
 // MAIN
 @mixin section-h3 {
     font-size: 16px;
     font-weight: 800;
-    color: #aaaaaa;
+    color: $section-h3-gray;
 }
 
 @mixin section-h2 {
@@ -48,7 +90,7 @@ $height-jumbotron: 700px;
 }
 
 @mixin section-p {
-    font-size: 1.3rem;
+    font-size: 16px;
     line-height: 2; 
-    color: #585858; 
+    color: $section-p-gray; 
 }

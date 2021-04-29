@@ -42,7 +42,11 @@ function init() {
                 }
             ],
 
-            scrollY: 0
+            scrollY: 0,
+
+            // scrollYObject: {
+            //     transform: 'translate3d(0px, ' + this.scrollY + 'px, ' + '0px)'
+            // }
         },
 
         methods: {
