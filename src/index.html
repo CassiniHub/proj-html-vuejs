@@ -314,7 +314,7 @@
             </div>
         </footer>
 
-        <button @click="backToTop" v-show="scrollY > 100" class="--back-to-top">
+        <button @click="backToTop" :class="[ scrollY > 150 ? 'visible' : 'invisible']" class="--back-to-top">
             <i class="fas fa-chevron-up"></i>
         </button>
 

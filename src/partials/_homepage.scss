@@ -104,10 +104,6 @@ header {
     
                                 a.btn {
                                     @include btn;
-
-                                    &:hover {
-                                        background-color: $secondary-hover-color;
-                                    }
                                 }
                             }
                         }
@@ -203,10 +199,6 @@ header {
 
         a.btn {
             @include btn;
-
-            &:hover {
-                background-color: $secondary-hover-color;
-            }
         }
     }
 }
@@ -285,10 +277,6 @@ header {
                         @include btn;
     
                         margin-bottom: 10px;
-    
-                        &:hover {
-                            background-color: $secondary-hover-color;
-                        }
                     }
                 }
             }

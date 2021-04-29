@@ -385,6 +385,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   font-size: 18px;
   line-height: 21px;
 }
+#move-with-ease .move-with-wrapper .move-with-right .mov-with-box .move-with-text a.btn:hover {
+  background-color: #3294e2;
+}
 
 #testimonials {
   padding: 130px 0;
@@ -451,6 +454,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   transition: all 0.2s;
   transition-timing-function: linear;
 }
+#testimonials .container .testimonials-wrapper .testimonials-button a.btn:hover {
+  background-color: #3294e2;
+}
 
 #request-free-quote {
   padding: 130px 30px;
@@ -493,6 +499,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   text-transform: uppercase;
   transition: all 0.2s;
   transition-timing-function: linear;
+}
+#request-free-quote .container .request-free-wrapper a.btn:hover {
+  background-color: #3294e2;
 }
 
 footer .primary-footer {
@@ -667,9 +676,11 @@ body {
 }
 
 .visible {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .invisible {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }

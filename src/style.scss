@@ -36,9 +36,11 @@ body {
 
 // UTILITIES
 .visible {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .invisible {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }

@@ -1,8 +1,10 @@
 // COLORS
 $primary-color: #69bf14;
 $primary-border-color: #5AA510;
+
 $secondary-color: #1975C0;
 $secondary-hover-color: #3294e2;
+
 $gray-text-color: #777777;
 
 // section text color
@@ -12,7 +14,7 @@ $section-p-gray: #585858;
 // card color bg
 $card-bg: #F2F5F8;
 
-// SECTION'S HEADER
+// SECTION'S HEIGHT
 $height-primary-header: 100px;
 $height-jumbotron: 700px;
 $height-move-with-ease: 780px;
@@ -36,6 +38,10 @@ $height-move-with-ease: 780px;
     text-transform: uppercase;
     transition: all .2s;
     transition-timing-function: linear;
+    
+    &:hover {
+        background-color: $secondary-hover-color;
+    }
 }
 
 // FLEX
