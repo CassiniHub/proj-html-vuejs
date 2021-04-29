@@ -12,9 +12,10 @@ $section-p-gray: #585858;
 // card color bg
 $card-bg: #F2F5F8;
 
-// SECONDARY HEADER
+// SECTION'S HEADER
 $height-primary-header: 100px;
 $height-jumbotron: 700px;
+$height-move-with-ease: 780px;
 
 // - - - - - - - - - - - - - - - - - - -
 
@@ -93,4 +94,32 @@ $height-jumbotron: 700px;
     font-size: 16px;
     line-height: 2; 
     color: $section-p-gray; 
+}
+
+@mixin card-h3 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $secondary-color;
+}
+
+@mixin bg-img {
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// FOOTER
+@mixin footer-h4 {
+    margin-bottom: 28px;
+
+    font-size: 19px;
+    font-weight: 900;
+    color: black;
+}
+
+@mixin footer-p-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
 }

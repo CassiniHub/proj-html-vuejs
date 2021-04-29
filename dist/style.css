@@ -338,7 +338,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 40px 50px;
+  padding: 40px 45px;
   text-align: center;
   background-color: #69bf14;
 }
@@ -382,7 +382,8 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   transition-timing-function: linear;
   padding: 17px 40px;
   margin-top: 10px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 #testimonials {
@@ -423,8 +424,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
 }
 #testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card h3 {
   margin: 30px 0;
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
   color: #1975C0;
 }
 #testimonials .container .testimonials-wrapper .testimonials-cards-wrapper .testimonials-card em {
@@ -507,6 +509,7 @@ footer .primary-footer .container .primary-footer-wrapper .primary-footer-about 
   padding: 20px;
 }
 footer .primary-footer .container .primary-footer-wrapper .primary-footer-about h4 {
+  margin-bottom: 28px;
   margin-bottom: 28px;
   font-size: 19px;
   font-weight: 900;
@@ -607,6 +610,7 @@ footer .secondary-footer {
 }
 footer .secondary-footer .container .secondary-footer-wrapper .secondary-footer-top {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   margin-bottom: 30px;
   font-size: 14px;
