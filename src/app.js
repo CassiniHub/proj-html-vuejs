@@ -43,10 +43,6 @@ function init() {
             ],
 
             scrollY: 0,
-
-            // scrollYObject: {
-            //     transform: 'translate3d(0px, ' + this.scrollY + 'px, ' + '0px)'
-            // }
         },
 
         methods: {
@@ -69,16 +65,8 @@ function init() {
                 
                 if (window.scrollY < 800) {
                     this.scrollY = window.scrollY;
-                    console.log('scrollY: ' + this.scrollY);
-                    console.log(this.scrollYObject);
                 }
-                
-                // console.log(window.scrollY);
             }
-        },
-
-        watch: {
-            
         },
 
         computed: {
@@ -89,11 +77,6 @@ function init() {
                 
             }
         },
-
-        created: function () {
-
-        },
-
 
         mounted() {
             console.log('Hi developer');

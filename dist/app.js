@@ -20,10 +20,7 @@ function init() {
         title: 'RECENT POSTS',
         voices: ['Heading Out To College?', 'Moving Your Business?', 'Outstanding Quality', 'Cost of Moving', 'Best Moving Tips']
       }],
-      scrollY: 0 // scrollYObject: {
-      //     transform: 'translate3d(0px, ' + this.scrollY + 'px, ' + '0px)'
-      // }
-
+      scrollY: 0
     },
     methods: {
       selectMenuVoices: function selectMenuVoices(menuName) {
@@ -42,13 +39,9 @@ function init() {
       handleScroll: function handleScroll() {
         if (window.scrollY < 800) {
           this.scrollY = window.scrollY;
-          console.log('scrollY: ' + this.scrollY);
-          console.log(this.scrollYObject);
-        } // console.log(window.scrollY);
-
+        }
       }
     },
-    watch: {},
     computed: {
       scrollYObject: function scrollYObject() {
         return {
@@ -56,7 +49,6 @@ function init() {
         };
       }
     },
-    created: function created() {},
     mounted: function mounted() {
       console.log('Hi developer');
       window.addEventListener('scroll', this.handleScroll);

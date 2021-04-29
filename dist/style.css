@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.--back-to-top {
+.btn--back-to-top {
   position: fixed;
   bottom: 0;
   right: 75px;
@@ -13,7 +13,7 @@
   transition-timing-function: linear;
   cursor: pointer;
 }
-.--back-to-top:hover {
+.btn--back-to-top:hover {
   background-color: #69bf14;
 }
 
@@ -62,6 +62,8 @@ header .secondary-header .secondary-header-wrapper .secondary-right-header .soci
 }
 header .jumbotron {
   height: 750px;
+  position: relative;
+  overflow: hidden;
 }
 header .jumbotron .jumbotron-bg {
   position: absolute;
@@ -76,54 +78,54 @@ header .jumbotron .jumbotron-bg {
   background-size: cover;
   background-repeat: no-repeat;
 }
-header .jumbotron .primary-header .jumbotron-wrapper {
+header .jumbotron .jumbotron-wrapper {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   height: 750px;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper {
   position: absolute;
   display: flex;
   flex-flow: row nowrap;
   height: 100px;
   width: 100%;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-logo {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-logo {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   flex: 1 1 auto;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice {
   margin-right: 50px;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice:last-child {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice:last-child {
   margin-right: 0;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a {
   font-size: 16px;
   font-weight: 900;
   color: black;
   transition: all 0.2s;
   transition-timing-function: linear;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a:Hover {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li.voice a:Hover {
   color: #69bf14;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn {
   border-radius: 25px;
   padding: 13px 29px;
   font-size: 1.2rem;
@@ -135,10 +137,10 @@ header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .pr
   transition: all 0.2s;
   transition-timing-function: linear;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn:hover {
+header .jumbotron .jumbotron-wrapper .primary-header-wrapper .primary-header-menu .nav-menu-voices li a.btn:hover {
   background-color: #3294e2;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text {
+header .jumbotron .jumbotron-wrapper .jumbo-text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -146,14 +148,14 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text {
   flex: 1 1 auto;
   margin-top: 50px;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h1 {
+header .jumbotron .jumbotron-wrapper .jumbo-text h1 {
   margin: 20px 0;
   font-size: 64px;
   font-weight: 900;
   line-height: 1.2;
   color: black;
 }
-header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
+header .jumbotron .jumbotron-wrapper .jumbo-text h3 {
   font-size: 16px;
   font-weight: 900;
   color: #777777;

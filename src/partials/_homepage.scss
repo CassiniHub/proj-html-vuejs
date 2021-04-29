@@ -48,9 +48,9 @@ header {
     .jumbotron {
         height: $height-jumbotron;
 
-        // background-image: url('images/avada-movers-homeherobackground-final.jpg');
-        // @include bg-img;
-
+        position: relative;
+        overflow: hidden;
+        
         .jumbotron-bg {
             position: absolute;
             top: 0;
@@ -62,93 +62,91 @@ header {
             min-height: 150px;
 
             background-image: url('images/avada-movers-homeherobackground-final.jpg');
-            
             @include bg-img;
 
         }
-        .primary-header {
 
-            .jumbotron-wrapper {
-                position: relative;
+        .jumbotron-wrapper {
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+
+            height: $height-jumbotron;
+
+            .primary-header-wrapper {
+                position: absolute;
                 display: flex;
-                flex-flow: column nowrap;
+                flex-flow: row nowrap;
 
-                height: $height-jumbotron;
+                height: $height-primary-header;
+                width: 100%;
 
-                .primary-header-wrapper {
-                    position: absolute;
-                    display: flex;
-                    flex-flow: row nowrap;
-    
-                    height: $height-primary-header;
-                    width: 100%;
-    
-                    .primary-header-logo {
-                        @include flex-row-no-start;
-                        align-items: center;
-                    }
+                .primary-header-logo {
+                    @include flex-row-no-start;
+                    align-items: center;
+                }
+                
+                .primary-header-menu {
+                    @include flex-row-no-end;
+
+                    flex: 1 1 auto;
                     
-                    .primary-header-menu {
+                    .nav-menu-voices {
                         @include flex-row-no-end;
-    
-                        flex: 1 1 auto;
-                        
-                        .nav-menu-voices {
-                            @include flex-row-no-end;
-                            align-items: center;
-    
-                            li.voice {
-                                margin-right: 50px;
+                        align-items: center;
 
-                                &:last-child {
-                                    margin-right: 0;
-                                }
-                                a {
-                                    font-size: 16px;
-                                    font-weight: 900;
-                                    color: black;
-                                    transition: all .2s;
-                                    transition-timing-function: linear;
-    
-                                    &:Hover {
-                                        color: $primary-color;
-                                    }
+                        li.voice {
+                            margin-right: 50px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            a {
+                                font-size: 16px;
+                                font-weight: 900;
+                                color: black;
+                                transition: all .2s;
+                                transition-timing-function: linear;
+
+                                &:Hover {
+                                    color: $primary-color;
                                 }
                             }
-    
-                            li {
-    
-                                a.btn {
-                                    @include btn;
-                                }
+                        }
+
+                        li {
+
+                            a.btn {
+                                @include btn;
                             }
                         }
                     }
                 }
+            }
 
-                .jumbo-text {
-                    @include flex-col-no-center;
-                    align-items: center;
-                    flex: 1 1 auto;
+            .jumbo-text {
+                @include flex-col-no-center;
+                align-items: center;
+                flex: 1 1 auto;
 
-                    margin-top: 50px;
-                    h1 {
-                        margin: 20px 0;
+                margin-top: 50px;
+                h1 {
+                    margin: 20px 0;
 
-                        font-size: 64px;
-                        font-weight: 900;
-                        line-height: 1.2;
-                        color: black;
-                    }
+                    font-size: 64px;
+                    font-weight: 900;
+                    line-height: 1.2;
+                    color: black;
+                }
 
-                    h3 {
-                        font-size: 16px;
-                        font-weight: 900;
-                        color: $gray-text-color;
-                    }
+                h3 {
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: $gray-text-color;
                 }
             }
         }
+        
     }
 }
 
