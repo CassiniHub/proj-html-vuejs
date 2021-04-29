@@ -24,6 +24,7 @@ header .secondary-header {
 header .secondary-header .secondary-header-wrapper {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 header .secondary-header .secondary-header-wrapper .secondary-left-header {
   display: flex;
@@ -137,8 +138,9 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text {
 }
 header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h1 {
   margin: 20px 0;
-  font-size: 5.5rem;
+  font-size: 64px;
   font-weight: 900;
+  line-height: 1.2;
   color: black;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {

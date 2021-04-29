@@ -6,8 +6,7 @@ header {
         background-color: $primary-color;
 
         .secondary-header-wrapper {
-            display: flex;
-            flex-flow: row nowrap;
+            @include flex-row-no-start;
 
             .secondary-left-header {
                 @include flex-row-no-start;
@@ -118,8 +117,9 @@ header {
                     h1 {
                         margin: 20px 0;
 
-                        font-size: 5.5rem;
+                        font-size: 64px;
                         font-weight: 900;
+                        line-height: 1.2;
                         color: black;
                     }
 
