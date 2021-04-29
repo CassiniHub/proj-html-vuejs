@@ -48,23 +48,40 @@ header {
     .jumbotron {
         height: $height-jumbotron;
 
-        background-image: url('images/avada-movers-homeherobackground-final.jpg');
-        @include bg-img;
+        // background-image: url('images/avada-movers-homeherobackground-final.jpg');
+        // @include bg-img;
 
+        .jumbotron-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            width: 1905px;
+            height: 1050px;
+            min-height: 150px;
+
+            background-image: url('images/avada-movers-homeherobackground-final.jpg');
+            
+            @include bg-img;
+
+        }
         .primary-header {
-            height: $height-primary-header;
 
             .jumbotron-wrapper {
+                position: relative;
                 display: flex;
                 flex-flow: column nowrap;
 
                 height: $height-jumbotron;
 
                 .primary-header-wrapper {
+                    position: absolute;
                     display: flex;
                     flex-flow: row nowrap;
     
                     height: $height-primary-header;
+                    width: 100%;
     
                     .primary-header-logo {
                         @include flex-row-no-start;
@@ -114,6 +131,7 @@ header {
                     align-items: center;
                     flex: 1 1 auto;
 
+                    margin-top: 50px;
                     h1 {
                         margin: 20px 0;
 
@@ -142,7 +160,7 @@ header {
     @include flex-row-no-center;
     align-items: center;
 
-    padding: 50px 0;
+    padding: 55px 0;
 
     background-color: $secondary-color;
 

@@ -61,24 +61,33 @@ header .secondary-header .secondary-header-wrapper .secondary-right-header .soci
   color: white;
 }
 header .jumbotron {
-  height: 700px;
+  height: 750px;
+}
+header .jumbotron .jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 1905px;
+  height: 1050px;
+  min-height: 150px;
   background-image: url("images/avada-movers-homeherobackground-final.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
-header .jumbotron .primary-header {
-  height: 100px;
-}
 header .jumbotron .primary-header .jumbotron-wrapper {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
-  height: 700px;
+  height: 750px;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper {
+  position: absolute;
   display: flex;
   flex-flow: row nowrap;
   height: 100px;
+  width: 100%;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .primary-header-wrapper .primary-header-logo {
   display: flex;
@@ -135,6 +144,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text {
   justify-content: center;
   align-items: center;
   flex: 1 1 auto;
+  margin-top: 50px;
 }
 header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h1 {
   margin: 20px 0;
@@ -154,7 +164,7 @@ header .jumbotron .primary-header .jumbotron-wrapper .jumbo-text h3 {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 55px 0;
   background-color: #1975C0;
   transition: all 0.2s;
   transition-timing-function: linear;

@@ -40,11 +40,23 @@ function init() {
         document.documentElement.scrollTop = 0;
       },
       handleScroll: function handleScroll() {
-        this.scrollY = window.scrollY;
-        console.log(this.scrollY);
+        if (window.scrollY < 800) {
+          this.scrollY = window.scrollY;
+          console.log('scrollY: ' + this.scrollY);
+          console.log(this.scrollYObject);
+        } // console.log(window.scrollY);
+
       }
     },
-    computed: {},
+    watch: {},
+    computed: {
+      scrollYObject: function scrollYObject() {
+        return {
+          transform: 'translate3d(0px, ' + '-' + this.scrollY * 0.32125656 + 'px, ' + '0px)'
+        };
+      }
+    },
+    created: function created() {},
     mounted: function mounted() {
       console.log('Hi developer');
       window.addEventListener('scroll', this.handleScroll);
