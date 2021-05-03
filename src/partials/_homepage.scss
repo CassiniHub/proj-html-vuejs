@@ -263,9 +263,20 @@ header {
     
                 .image-card-wrapper {
                     width: 100%;
+                    overflow: hidden;
     
                     img {
+                        display: block;
                         width: 100%;
+
+                        opacity: 1;
+
+                        transition: all 1s;
+
+                        &:hover {
+                            transform: scale3d(1.1, 1.1, 1.1);
+                            opacity: 0.9;
+                        }                 
                     }
                 }
     
@@ -273,7 +284,7 @@ header {
                     @include flex-col-no-center;
                     align-items: center;
     
-                    margin-top: 17px;
+                    margin-top: 20px;
                     padding: 30px 20px;
     
                     text-align: center;
@@ -307,7 +318,7 @@ header {
 #move-with-ease {
     height: $height-move-with-ease;
 
-    background-image: url('https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-movewithease-background-new.jpg');
+    background-image: url('images/avada-movers-movewithease-background-new.jpg');
     @include bg-img;
 
     .move-with-wrapper {
@@ -521,7 +532,7 @@ footer {
                     }
                 }
 
-                .primary-footer-movers {
+                .primary-footer-links {
                     flex: 0 1 calc(100% / 3);
 
                     padding: 20px;
@@ -563,51 +574,7 @@ footer {
                             }
                         }
                     }
-                }
-
-                .primary-footer-recent {
-                    flex: 0 1 calc(100% / 3);
-
-                    padding: 20px;
-
-                    h4 {
-                        @include footer-h4;
-                    }
-
-                    ul.primary-footer-menu-voices {
-                        @include flex-col-no-start;
-                        align-items: flex-start;
-
-                        li {
-                            a {
-                                @include flex-row-no-start;
-                                align-items: center;
-
-                                @include footer-p-link;
-                                color: #252525;
-
-                                transition: all .2s;
-                                transition-timing-function: linear;
-
-                                &:Hover {
-                                    color: $primary-color;
-                                }
-
-                                &::before {
-                                    font-family: "Font Awesome 5 Free";
-                                    font-size: 12px;
-                                    font-weight: 600;
-                                    content: "\f054 \2003";
-                                }
-
-                                i {
-                                    font-size: 12px;
-                                    margin-right: 5px;
-                                }
-                            }
-                        }
-                    }
-                }
+                }   
             }
         }
     }

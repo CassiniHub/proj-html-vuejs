@@ -275,16 +275,24 @@ header .jumbotron .jumbotron-wrapper .jumbo-text h3 {
 }
 #full-service-solution .container .service-cards-wrapper .card .image-card-wrapper {
   width: 100%;
+  overflow: hidden;
 }
 #full-service-solution .container .service-cards-wrapper .card .image-card-wrapper img {
+  display: block;
   width: 100%;
+  opacity: 1;
+  transition: all 1s;
+}
+#full-service-solution .container .service-cards-wrapper .card .image-card-wrapper img:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 0.9;
 }
 #full-service-solution .container .service-cards-wrapper .card .text-card-wrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 17px;
+  margin-top: 20px;
   padding: 30px 20px;
   text-align: center;
   background-color: white;
@@ -321,7 +329,7 @@ header .jumbotron .jumbotron-wrapper .jumbo-text h3 {
 
 #move-with-ease {
   height: 780px;
-  background-image: url("https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-movewithease-background-new.jpg");
+  background-image: url("images/avada-movers-movewithease-background-new.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -545,23 +553,23 @@ footer .primary-footer .container .primary-footer-wrapper .primary-footer-about 
   line-height: 2;
   color: black;
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links {
   flex: 0 1 calc(100% / 3);
   padding: 20px;
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers h4 {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links h4 {
   margin-bottom: 28px;
   font-size: 19px;
   font-weight: 900;
   color: black;
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers ul.primary-footer-menu-voices {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links ul.primary-footer-menu-voices {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers ul.primary-footer-menu-voices li a {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links ul.primary-footer-menu-voices li a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -573,57 +581,16 @@ footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers
   transition: all 0.2s;
   transition-timing-function: linear;
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers ul.primary-footer-menu-voices li a:Hover {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links ul.primary-footer-menu-voices li a:Hover {
   color: #69bf14;
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers ul.primary-footer-menu-voices li a::before {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links ul.primary-footer-menu-voices li a::before {
   font-family: "Font Awesome 5 Free";
   font-size: 12px;
   font-weight: 600;
   content: " ";
 }
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-movers ul.primary-footer-menu-voices li a i {
-  font-size: 12px;
-  margin-right: 5px;
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent {
-  flex: 0 1 calc(100% / 3);
-  padding: 20px;
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent h4 {
-  margin-bottom: 28px;
-  font-size: 19px;
-  font-weight: 900;
-  color: black;
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent ul.primary-footer-menu-voices {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent ul.primary-footer-menu-voices li a {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 2;
-  color: #252525;
-  transition: all 0.2s;
-  transition-timing-function: linear;
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent ul.primary-footer-menu-voices li a:Hover {
-  color: #69bf14;
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent ul.primary-footer-menu-voices li a::before {
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  font-weight: 600;
-  content: " ";
-}
-footer .primary-footer .container .primary-footer-wrapper .primary-footer-recent ul.primary-footer-menu-voices li a i {
+footer .primary-footer .container .primary-footer-wrapper .primary-footer-links ul.primary-footer-menu-voices li a i {
   font-size: 12px;
   margin-right: 5px;
 }

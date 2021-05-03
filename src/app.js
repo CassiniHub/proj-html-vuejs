@@ -46,18 +46,6 @@ function init() {
         },
 
         methods: {
-            // Take a list of link to stamp in the footer
-            // @param {string} menuName [get the title of the list you want to stamp]
-            selectMenuVoices: function (menuName) {
-                for (let i = 0; i < this.footerMenuVoices.length; i++) {
-                    const menuVoicesList = this.footerMenuVoices[i];
-
-                    if (menuVoicesList.title === menuName) {
-                        return menuVoicesList.voices;
-                    }
-                }
-            },
-
             // @click - Bring the user to the top of the page
             backToTop: function () {
                 document.body.scrollTop = 0;
