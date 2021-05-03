@@ -46,6 +46,8 @@ function init() {
         },
 
         methods: {
+            // Take a list of link to stamp in the footer
+            // @param {string} menuName [get the title of the list you want to stamp]
             selectMenuVoices: function (menuName) {
                 for (let i = 0; i < this.footerMenuVoices.length; i++) {
                     const menuVoicesList = this.footerMenuVoices[i];
@@ -56,11 +58,14 @@ function init() {
                 }
             },
 
+            // @click - Bring the user to the top of the page
             backToTop: function () {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             },
 
+            // Callback function of the mounted event listener
+            // Monitor the window.scrollY until it reaches 800 unit.
             handleScroll: function () {
                 
                 if (window.scrollY < 800) {
@@ -70,6 +75,8 @@ function init() {
         },
 
         computed: {
+            // Object to pass as inline style property in html
+            // Used to obtain parallax effect on jumbotron
             scrollYObject() {
                 return {
                     transform: 'translate3d(0px, ' + '-' + this.scrollY * 0.32125656 + 'px, ' + '0px)'
@@ -81,6 +88,7 @@ function init() {
         mounted() {
             console.log('Hi developer');
             
+            // Added scroll event to montor the scroll of the user
             window.addEventListener('scroll', this.handleScroll);
         }
     });

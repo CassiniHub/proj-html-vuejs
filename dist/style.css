@@ -62,17 +62,8 @@ header .secondary-header .secondary-header-wrapper .secondary-right-header .soci
 }
 header .jumbotron {
   height: 750px;
-  background-color: rgba(255, 255, 255, 0);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  border-width: 0px;
-  border-color: #e5e5e5;
-  border-style: solid;
-  background-size: cover;
-  background-image: none;
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 header .jumbotron .jumbotron-bg {
   position: absolute;
