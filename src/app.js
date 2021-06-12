@@ -63,7 +63,7 @@ function init() {
         },
 
         computed: {
-            // Object to pass as inline style property in html
+            // Attribute to pass as inline style property in html
             // Used to obtain parallax effect on jumbotron
             scrollYObject() {
                 return {
@@ -76,7 +76,7 @@ function init() {
         mounted() {
             console.log('Hi developer');
             
-            // Added scroll event to montor the scroll of the user
+            // Added scroll event to monitor the scroll of the user
             window.addEventListener('scroll', this.handleScroll);
         }
     });
